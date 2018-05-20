@@ -1,0 +1,122 @@
+html,
+body {
+    height: 100%;
+} 
+
+body {   font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    /*height: 100%; с этим подвал не появлялся на странице с фотами */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+h1 {
+    color: #2e353d;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+header {
+    border-width: 0.15px;
+    border-color: #b5b7ba;
+    border-style: solid;
+    background-color: #55dedd;
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.index {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.index img {
+    border-radius: 3%;
+}
+.parent_image {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.hide {
+     display: none;
+}
+
+header a {
+    color: #4d4d4d;
+    font-size: 20px; 
+    font-weight: 100;
+    text-align: left;
+    text-decoration: none
+}
+
+.show-block {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gallery img {
+    width: 400px;
+    border-radius: 3%;
+}
+.gallery a {
+    margin-bottom: 2%;    
+}
+
+main p {
+    width: 795px;
+    font-family: Roboto;
+    color: #242424;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 36px; 
+    text-align: left;
+}
+
+.your-class {
+    max-width: 1000px;
+    max-height: 800px; 
+    margin: 0 auto;
+}
+
+.slick-next {
+    right: 25px;
+    
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+footer {
+    background-color: #248088;
+    height: 132px;
+    color: #a4a4a4;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+}

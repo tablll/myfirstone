@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fotos of my last trip to Thailand</title>
+    <script src='jquery-3.3.1.min.js'></script>
+    <link rel="stylesheet" href="Magnific-Popup\dist\magnific-popup.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <script src='Magnific-Popup\dist\jquery.magnific-popup.min.js'></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('.parent_image').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image'
+                // other options
+            });
+            $('.show-block').on('click', function() {
+                var textButton = $('.hide').is(':visible') ? 'See more' : 'Hide';// спрашиваем у блока hide виден он или нет, в зависимостит от этого текст
+                $(this).text(textButton); //меняем техт кнопки на texbutton
+                $(this).prev().slideToggle();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <a href="index.html">Main page </a>
+                <a href="samui.html">Samui</a>
+                <a href="krabi.html">Krabi</a>
+                <a href="phiphi.html">Phi Phi</a>
+                <a href="phuket.html">Phuket</a>
+                <a href="phangan.html">Phangan</a>
+            </header>
+            <h1>Samui and near places</h1>
+            <main class="gallery">
+                <div class="parent_image">
+                    <a href="images\samui\s1.jpg"><img src="images\samui\s1.jpg" alt="foto"></a>
+                    <a href="images\samui\s2.jpg"><img src="images\samui\s2.jpg" alt="foto"></a>
+                    <a href="images\samui\s3.jpg"><img src="images\samui\s3.jpg" alt="foto"></a>
+                    <a href="images\samui\s4.jpg"><img src="images\samui\s4.jpg" alt="foto"></a>
+                    <a href="images\samui\s5.jpg"><img src="images\samui\s5.jpg" alt="foto"></a>
+                    <a href="images\samui\s6.jpg"><img src="images\samui\s6.jpg" alt="foto"></a>
+                    <a href="images\samui\s7.jpg"><img src="images\samui\s7.jpg" alt="foto"></a>
+                    <a href="images\samui\s8.jpg"><img src="images\samui\s8.jpg" alt="foto"></a>
+                </div>
+                <div class="hide">
+                    <div class="parent_image">
+                        <a href="images\samui\s9.jpg"><img src="images\samui\s9.jpg" alt="foto"></a>
+                        <a href="images\samui\s10.jpg"><img src="images\samui\s10.jpg" alt="foto"></a>
+                        <a href="images\samui\s11.jpg"><img src="images\samui\s11.jpg" alt="foto"></a>
+                        <a href="images\samui\s12.jpg"><img src="images\samui\s12.jpg" alt="foto"></a>
+                        <a href="images\samui\s13.jpg"><img src="images\samui\s13.jpg" alt="foto"></a>
+                        <a href="images\samui\s14.jpg"><img src="images\samui\s14.jpg" alt="foto"></a>
+                        <a href="images\samui\s15.jpg"><img src="images\samui\s15.jpg" alt="foto"></a>
+                        <a href="images\samui\s16.jpg"><img src="images\samui\s16.jpg" alt="foto"></a>
+                    </div>
+                </div>
+                <a class=show-block href="#">See more</a>
+            </main>
+        </div>
+        <footer>
+            All rights reserved &copy; 2018
+        </footer>
+    </div>
+</body>
+
+</html>
